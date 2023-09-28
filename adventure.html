@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100vw;
+        height: 90vw;
+        background-image: url(https://cdn.pixabay.com/photo/2016/11/14/03/26/cliff-1822484__340.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-content{
+        color: rgb(236, 210, 176);
+        text-align: center;
+    }
+    .header-content h2{
+        font-size: 40px;
+    }
+    nav{
+    background-color: rgb(15, 39, 64);
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+    }
+    label.logo{
+        color: white;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+    }
+    nav ul{
+        float:right;
+        margin-right: 20px;
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+    nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    a.active,a:hover{
+        background-color: rgba(151, 244, 12, 0.548);
+        transition: .5s;
+    }
+    .checkbtn{
+    color: white;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    }
+    #check{
+        display: none;
+    }
+    @media (max-width:950px){
+        label.logo{
+                font-size: 30px;
+                padding-left: 50px;
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+        }
+        @media (max-width:850px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                width: 100%;
+                position: fixed;
+                height: 100vh;
+                background-color: rgb(235, 183, 235);
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+                color: brown;
+            }
+            a.active,a:hover{
+                background: none;
+                color: darkgreen;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            .column h4{
+                margin-left: 50px;
+            }
+            .everest-img{
+                padding-right: 50px;
+                padding-top: 20px;
+            }
+            .scuba-img{
+                padding-right: 80px;
+                padding-bottom: 20px;
+            }
+        }
+        @media (max-width:500px){
+            .checkbtn{
+                display: block;
+            }
+            ul{
+                width: 100%;
+                position: fixed;
+                height: 1000vh;
+                background-color: rgb(235, 183, 235);
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            nav ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            nav ul li a{
+                font-size: 20px;
+                color: brown;
+            }
+            a.active,a:hover{
+                background: none;
+                color: darkgreen;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            
+
+        }
+       
+    
+    a{
+        text-decoration: none;
+        
+    }
+    .ctn{
+        padding: 10px 15px;
+        background: rgb(210, 40, 40);
+        border-radius: 30px;
+    }
+    .line{
+        width: 150px;
+        height: 5px;
+        background: red;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    .header-content h1{
+        font-size: 60px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .menu-btn{
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 40px;
+      cursor: pointer;
+    }
+    
+    section{
+        height: 80%;
+        margin: 80px auto;
+    }
+    .title{
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .everest-img{
+        height: 370px;
+    }
+    h4{
+        font-size: 40px;
+        margin-left: 250px;
+       
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(53, 48, 99);
+    }
+    .row .column img{
+        width: 89%;
+        margin: 100px;
+    }
+    .scuba-img{
+        height: 370px;
+        padding-right: 30px;
+        
+    }
+    .row .column p{
+        text-align: center;
+        font-size: 35px;
+        margin: 40px;
+    }
+    .row .column .ctn{
+        padding: 10px 9px;
+        margin: 43%;
+    }
+    footer{
+        background-color: rgb(126, 27, 32);
+        padding: 10px;
+        text-align: center;
+        color: rgb(223, 198, 198); 
+        height: 100px;
+        font-size: 20px;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="material-icons"
+                style="font-size: 30px;
+                line-height: 80px;">menu</i>
+        </label>
+        <label class="logo">ADVENTURE</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tours.html">Tours</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+  
+    
+    
+    <header>
+        <div class="header-content">
+        <h2>Explore the colorful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT </h1>
+        <a href="about.html" class="ctn">Learn More</a>
+        </div>
+    </header>
+    <section class="events">
+        <div class="title">
+            <h1>UPCOMING EVENTS</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="everest-img" src="https://www.muchbetteradventures.com/magazine/content/images/2022/10/hiker-everest-base-camp.jpg" alt="">
+                <h4>Everest trek</h4>
+                <p>The difficulty level of the Everest Base Camp is moderate. The trekking time often requires two weeks</p>
+               
+            </div>
+            <div class="column">
+                <img class="scuba-img" src="https://www.tripsavvy.com/thmb/9DfO21LndIr2cuN173_FrQVj-MM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-163175242-58f631e43df78ca159f2b798.jpg" alt="">
+                <h4>Scuba Diving</h4>
+                <p>Scuba diving is one of the easiest to learn. It usually takes three-four days to complete your PADI Open Water Diver certification</p>
+            
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>email id: abc@vishnu.edu.in</p>
+        <p>phone: 5441164944</p>
+
+    </footer>
+</body>
+</html><script type="module" src=""></script>

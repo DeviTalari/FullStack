@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        body{
+            background-image: linear-gradient( rgb(7, 2, 5),rgba(8, 22, 8, 0.75), rgb(190, 194, 215));
+            color: rgb(242, 218, 218);
+        }
+        .gallery{
+            display: grid;
+            padding: 16px;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(10, 5vw);
+            grid-gap: 3px;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+        .gallery>img {
+           width: 100%;
+	       height: 100%;
+	       object-fit: cover;
+        } 
+          .river-rafting{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+          }
+          .rock-climbing{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 4;
+          }
+          .paragliding{
+            grid-column-start: 6;
+            grid-column-end: 10;
+            grid-row-start: 1;
+            grid-row-end: 4;
+          }
+          .flyboard{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 8;
+          }
+          .windsurfing{
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 8;
+          }
+          .bungy-jump{
+            grid-column-start: 6;
+            grid-column-end: 10;
+            grid-row-start: 4;
+            grid-row-end: 8;
+          }
+          h1,h2,h3{
+            color: rgb(146, 84, 3);
+          }
+    </style>
+</head>
+<body>
+    <h1>Adventure</h1>
+    <p>An adventure is an exciting experience or undertaking that is typically bold, sometimes risky.
+        Adventures may be activities with danger such as traveling, exploring, skydiving, mountain climbing, scuba diving, river rafting, or other extreme sports.
+    </p>
+    <h2>Motivation:</h2>
+    <p>According to adventurer André Malraux, in his Man's Fate (1933), "If a man is not ready to risk his life, where is his dignity?". <br>
+        Similarly, Helen Keller stated that "Life is either a daring adventure or nothing."<br>
+        Author Jon Levy suggests that an experience should meet several criteria to be considered an adventure:</p>
+     <ul><li> Be remarkable—that is, worth talking about</li>
+         <li> Involve adversity or perceived risk</li>
+         <li>  Bring about personal growth.</li>
+</ul>
+    <h3>Reasons adventure travel is good for you:</h3>
+    <p>1. Spending time outdoors reduces stress <br>
+       2. Nature makes exercise easier <br>
+       3. Nature can rejuvenate your soul <br>
+       4. Gain a sense of accomplishment <br>
+       5. Travel increases your self-awareness <br>
+       6. The outdoors can make you smarter <br>
+       7. Forge new friendships <br>
+       8. Learn new skills <br>
+    </p>
+    <div class="gallery">
+        <img src="https://cdn.pixabay.com/photo/2014/09/14/05/02/rafting-444743__340.jpg" alt="river rafting" class="river-rafting">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDhfy8SJT9lvNdJIKlZ0b7er_MqGReCTGRS3jWApgXQ&usqp=CAU&ec=48665698" alt="rock-climbing" class="rock-climbing">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjYa1oUBAFoMKaMXqU-0j_aYeGnd4LpdeOhfkEHZMMKA&usqp=CAU&ec=48665698" alt="paragliding" class="paragliding">
+        <img src="https://bucketlistjourney.net/wp-content/uploads/2022/01/Bungee-Jump-RF-2.jpg" alt="bungy jump" class="bungy-jump">
+        <img src="https://bucketlistjourney.net/wp-content/uploads/2022/01/Flyboard-RF-2-2.jpg" alt="flyboard" class="flyboard">
+        <img src="https://bucketlistjourney.net/wp-content/uploads/2022/01/Go-Windsurfing-RF-2.jpg" alt="windsurfing" class="windsurfing">    </div>
+    
+</body>
+</html>
